@@ -1,0 +1,163 @@
+/* Styles de base */
+body {
+    background-color: #121212; /* Couleur de fond sombre */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Amélioration de la lisibilité */
+}
+
+/* En-tête */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Espace entre les éléments */
+    padding: 20px;
+    background-color: #1e1e1e; /* Fond de l'en-tête */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre sous l'en-tête */
+}
+
+.profile-photo {
+    width: 80px; /* Largeur de la photo de profil */
+    height: 80px; /* Hauteur de la photo de profil */
+    border-radius: 50%; /* Arrondir la photo */
+    border: 2px solid #1e88e5; /* Bordure bleue */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Afficher les éléments en ligne */
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement */
+    padding: 5px 10px; /* Espacement autour du lien */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour l'effet de survol */
+}
+
+nav a:hover {
+    background-color: #1e88e5; /* Couleur de fond au survol */
+    color: #ffffff; /* Couleur du texte */
+}
+
+/* Contenu principal */
+main {
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1e1e1e; /* Couleur de fond des sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre sous les sections */
+}
+
+/* Projets */
+.categorie {
+    display:flex;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ffffff; /* Bordure blanche */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, transform 0.3s; /* Transition pour le survol */
+}
+
+.categorie:hover {
+    background-color: #2a2a2a; /* Couleur de fond au survol */
+    transform: scale(1.02); /* Légère augmentation de la taille au survol */
+}
+.project-card {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #1e1e1e; /* Fond du pied de page */
+    padding: 20px;
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Ombre au-dessus du pied de page */
+    /* Styles de base */
+    body {
+        background-color: #121212; /* Couleur de fond sombre */
+        color: #ffffff; /* Couleur du texte */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6; /* Amélioration de la lisibilité */
+    }
+
+    /* En-tête */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Espace entre les éléments */
+        padding: 20px;
+        background-color: #1e1e1e; /* Fond de l'en-tête */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre sous l'en-tête */
+    }
+
+    .profile-photo {
+        width: auto; /* Largeur de la photo de profil */
+        height: auto; /* Hauteur de la photo de profil */
+        border-radius: 100%; /* Arrondir la photo */
+        border: 2px solid #1e88e5; /* Bordure bleue */
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    /* Titre sous le nom */
+    .title {
+        font-size: 1.5em; /* Taille de la police pour le titre */
+        margin: 5px 0; /* Espacement autour du titre */
+        color: #1e88e5; /* Couleur du titre */
+    }
+
+    /* Navigation */
+    nav ul {
+        list-style-type: none; /* Supprimer les puces */
+        padding: 0;
+    }
+
+    nav ul li {
+
+footer a{
+    color: #1e88e5; /* Couleur des liens dans le pied de page */
+    text-decoration: none; /* Supprimer le soulignement */
+    outline: none; /* Supprimer le contour */
+    margin: 0 10px; /* Espacement entre les liens */
+}
+
+footer a:hover {
+    text-decoration: none; /* Souligner au survol */
+}}}
