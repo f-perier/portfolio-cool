@@ -1,92 +1,110 @@
 /* Styles de base */
 body {
-    background-color: #121212; /* Couleur de fond sombre */
-    color: #ffffff; /* Couleur du texte */
+    background-color: #f9f9f9; /* Fond blanc moderne */
+    color: #333; /* Texte en gris foncé pour le contraste */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Amélioration de la lisibilité */
+    line-height: 1.6;
 }
 
 /* En-tête */
 header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly; /* Espace entre les éléments */
-    padding: 20px;
-    background-color: #1e1e1e; /* Fond de l'en-tête */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre sous l'en-tête */
+    justify-content: space-between;
+    padding: 10px 5%; /* Utilisation de % pour l'adaptabilité */
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #e0e0e0;
+    height: auto;
 }
 
 .profile-photo {
-    width: 80px; /* Largeur de la photo de profil */
-    height: 80px; /* Hauteur de la photo de profil */
-    border-radius: 50%; /* Arrondir la photo */
-    border: 2px solid #1e88e5; /* Bordure bleue */
+    width: 4vw; /* Ajuste la taille de la photo proportionnellement à l'écran */
+    height: 4vw;
+    max-width: 80px; /* Taille max pour éviter qu'elle devienne énorme */
+    max-height: 80px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2vw; /* Adaptation dynamique */
     margin: 0;
+    color: #222;
+}
+
+.title {
+    font-size: 1.5vw;
+    margin: 0;
+    color: #555;
 }
 
 /* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav ul {
-    list-style-type: none; /* Supprimer les puces */
+    list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline; /* Afficher les éléments en ligne */
-    margin: 0 15px;
+    margin: 0 1vw; /* Espacement adaptable */
 }
 
 nav a {
-    color: #ffffff; /* Couleur des liens */
-    text-decoration: none; /* Supprimer le soulignement */
-    padding: 5px 10px; /* Espacement autour du lien */
-    border-radius: 5px; /* Coins arrondis */
-    transition: background-color 0.3s, color 0.3s; /* Transition pour l'effet de survol */
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5vw 1vw;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1vw;
 }
 
 nav a:hover {
-    background-color: #1e88e5; /* Couleur de fond au survol */
-    color: #ffffff; /* Couleur du texte */
-}
-
-/* Contenu principal */
-main {
-    padding: 20px;
+    background-color: #007bff;
+    color: #ffffff;
 }
 
 /* Sections */
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #1e1e1e; /* Couleur de fond des sections */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre sous les sections */
+    margin: 3vh auto;
+    padding: 2vh 5%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
 }
 
 /* Projets */
 .categorie {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    margin: 10px 0;
-    padding: 15px;
-    border: 1px solid #ffffff; /* Bordure blanche */
-    border-radius: 5px; /* Coins arrondis */
-    transition: background-color 0.3s, transform 0.3s; /* Transition pour le survol */
+    margin: 2vh 0;
+    padding: 2vh;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .categorie:hover {
-    background-color: #2a2a2a; /* Couleur de fond au survol */
-    transform: scale(1.02); /* Légère augmentation de la taille au survol */
+    background-color: #f0f0f0;
+    transform: scale(1.02);
 }
+
 .project-card {
     position: relative;
-    width: 320px;
-    height: 220px;
+    width: 40vw;
+    height: 22vw;
+    max-width: 400px;
+    max-height: 220px;
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -101,64 +119,44 @@ section {
 
 /* Pied de page */
 footer {
-    background-color: #1e1e1e; /* Fond du pied de page */
-    padding: 20px;
-    text-align: center; /* Centrer le texte */
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Ombre au-dessus du pied de page */
-    /* Styles de base */
-    body {
-        background-color: #121212; /* Couleur de fond sombre */
-        color: #ffffff; /* Couleur du texte */
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6; /* Amélioration de la lisibilité */
-    }
+    background-color: #ffffff;
+    padding: 2vh;
+    text-align: center;
+    border-top: 2px solid #e0e0e0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
 
-    /* En-tête */
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Espace entre les éléments */
-        padding: 20px;
-        background-color: #1e1e1e; /* Fond de l'en-tête */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Ombre sous l'en-tête */
-    }
-
-    .profile-photo {
-        width: auto; /* Largeur de la photo de profil */
-        height: auto; /* Hauteur de la photo de profil */
-        border-radius: 100%; /* Arrondir la photo */
-        border: 2px solid #1e88e5; /* Bordure bleue */
-    }
-
-    h1 {
-        font-size: 2.5em;
-        margin: 0;
-    }
-
-    /* Titre sous le nom */
-    .title {
-        font-size: 1.5em; /* Taille de la police pour le titre */
-        margin: 5px 0; /* Espacement autour du titre */
-        color: #1e88e5; /* Couleur du titre */
-    }
-
-    /* Navigation */
-    nav ul {
-        list-style-type: none; /* Supprimer les puces */
-        padding: 0;
-    }
-
-    nav ul li {
-
-footer a{
-    color: #1e88e5; /* Couleur des liens dans le pied de page */
-    text-decoration: none; /* Supprimer le soulignement */
-    outline: none; /* Supprimer le contour */
-    margin: 0 10px; /* Espacement entre les liens */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 1vw;
+    font-size: 1vw;
 }
 
 footer a:hover {
-    text-decoration: none; /* Souligner au survol */
-}}}
+    text-decoration: underline;
+}
+
+/* Media Queries pour une meilleure adaptation */
+@media screen and (max-width: 1440px) {
+    h1 { font-size: 2.2vw; }
+    .title { font-size: 1.3vw; }
+    .profile-photo { width: 5vw; height: 5vw; }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 { font-size: 3vw; }
+    .title { font-size: 1.8vw; }
+    .profile-photo { width: 6vw; height: 6vw; }
+    nav ul { flex-direction: column; align-items: center; }
+    nav ul li { margin: 5px 0; }
+}
+
+@media screen and (max-width: 720px) {
+    header { flex-direction: column; align-items: center; }
+    h1 { font-size: 4vw; text-align: center; }
+    .title { font-size: 2vw; text-align: center; }
+    .profile-photo { width: 8vw; height: 8vw; }
+    nav ul { flex-direction: column; align-items: center; }
+    nav ul li { margin: 5px 0; }
+}

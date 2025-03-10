@@ -1,7 +1,7 @@
 // script.js
 
 // Fonction pour faire défiler la page vers le haut
-document.getElementById('scrollToTop').addEventListener('click', function(event) {
+document.getElementById('fa-solid fa-up-long').addEventListener('click', function(event) {
     event.preventDefault(); // Empêche le comportement par défaut du lien
     window.scrollTo({
         top: 0,
